@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Expense</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Control Expense</h1>
+    </header>
 
+    <main>
+        <section id="novo-gasto">
+            <h2>Adicionar Novo Gasto</h2>
+            <form id="form-gasto">
+                <div>
+                    <label for="estabelecimento">Nome do Estabelecimento:</label>
+                    <input type="text" id="estabelecimento" name="estabelecimento" required>
+                </div>
+                <div>
+                    <label for="item">Item Gasto:</label>
+                    <input type="text" id="item" name="item" placeholder="Ex: Refrigerante, Cerveja, etc." required>
+                </div>
+                <div>
+                    <label for="valor">Valor (R$):</label>
+                    <input type="number" id="valor" name="valor" step="0.01" required>
+                </div>
+                <button type="submit">Adicionar Gasto</button>
+            </form>
+        </section>
+
+        <section id="lista-gastos">
+            <h2>Histórico de Gastos</h2>
+            <ul id="gastos-lista">
+                </ul>
+            <div id="total-gastos">
+                <strong>Total Gasto: R$ 0.00</strong>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Control Expense</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
