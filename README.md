@@ -1,103 +1,41 @@
-body {
-    font-family: sans-serif;
-    background-color: #000; /* Fundo preto */
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
+🍺 Controle de Gastos em Bares
+Este é um projeto web simples para ajudar você a controlar e monitorar os valores gastos em bares e estabelecimentos, separando os gastos por tipo (bebidas, refrigerantes, etc.) e mantendo um registro dos locais visitados.
 
-header {
-    background-color: #222;
-    padding: 20px;
-    text-align: center;
-}
+🛠️ Tecnologias Utilizadas
+O projeto foi desenvolvido em uma estrutura sequencial de arquivos, utilizando as tecnologias fundamentais da web:
 
-main {
-    padding: 20px;
-}
+HTML (index.html): Estrutura e conteúdo principal da aplicação.
 
-#novo-gasto h2,
-#lista-gastos h2 {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+CSS (style.css): Estilização, layout e definição de cores (fundo escuro e botões amarelos).
 
-#form-gasto div {
-    margin-bottom: 15px;
-}
+JavaScript (script.js): Lógica de controle, adição e remoção de gastos e cálculo do total.
 
-#form-gasto label {
-    display: block;
-    margin-bottom: 5px;
-    color: #ddd;
-}
+✨ Funcionalidades
+Registro de Estabelecimentos: Adicione o nome dos bares ou locais que você frequenta.
 
-#form-gasto input[type="text"],
-#form-gasto input[type="number"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    border: 1px solid #555;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
+Registro de Gastos: Adicione a descrição do item (e.g., "Cerveja", "Refrigerante") e o valor gasto.
 
-#form-gasto button[type="submit"] {
-    background-color: #ffc107; /* Botão amarelo */
-    color: #000;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+Cálculo de Total: Acompanhe o valor total acumulado de todos os seus gastos.
 
-#form-gasto button[type="submit"]:hover {
-    background-color: #e0a800;
-}
+Remoção de Itens: Possibilidade de remover tanto um gasto quanto um estabelecimento da lista.
 
-#gastos-lista {
-    list-style: none;
-    padding: 0;
-}
+Design Temático: Fundo com imagem de bar e botões em destaque na cor amarela.
 
-#gastos-lista li {
-    background-color: #111;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+📂 Estrutura do Projeto
+Certifique-se de que os seguintes arquivos estejam no mesmo diretório:
 
-#gastos-lista li span {
-    flex-grow: 1;
-    margin-right: 10px;
-}
+/projeto-controle-gastos
+├── index.html        (Estrutura HTML)
+├── style.css         (Estilização CSS)
+├── script.js         (Lógica JavaScript)
+└── imagem-de-bar.jpg (Imagem de fundo - nome deve ser ajustado no CSS)
+🚀 Como Usar
+Baixar os Arquivos: Salve os três arquivos de código (index.html, style.css, script.js) em uma mesma pasta.
 
-#total-gastos {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #333;
-    border-radius: 5px;
-    text-align: right;
-    font-size: 1.2em;
-}
+Imagem de Fundo: Coloque a imagem que você deseja usar como fundo na mesma pasta e, se necessário, ajuste o nome do arquivo no style.css (linha background-image: url('imagem-de-bar.jpg');).
 
-#total-gastos strong {
-    color: #ffc107; /* Amarelo para destacar o "Total Gasto" */
-}
+Abrir: Abra o arquivo index.html em qualquer navegador web moderno.
 
-footer {
-    background-color: #222;
-    color: #aaa;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+Controle: Utilize o formulário superior para registrar o Nome do Estabelecimento e o formulário inferior para registrar a Descrição e o Valor (R$) dos seus gastos.
+
+  
